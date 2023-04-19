@@ -1,0 +1,34 @@
+#/usr/bin/env bash
+
+#############################
+# Variables
+#############################
+
+config_path="$HOME/.config"
+waybar_config="$config_path/waybar"
+
+export SDL_VIDEODRIVER=wayland
+export XDG_CURRENT_DESKTOP=sway
+export MOZ_ENABLE_WAYLAND=1
+
+#############################
+# System utilities
+#############################
+
+# Policy kit (when required elevated privileges)
+/usr/lib/polkit-kde-authentication-agent-1 &
+
+#############################
+# Bar
+#############################
+waybar -c $waybar_config/config -s $waybar_config/style.css &
+
+#############################
+# Wallpaper
+#############################
+hyprpaper &
+
+#############################
+# Effects and notifications
+#############################
+dunst &
