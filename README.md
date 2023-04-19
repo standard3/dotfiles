@@ -13,7 +13,7 @@
 
 As this setup is made for hyprland, a bleeding-edge distribution is recommended (e.g: arch, endeavouros, ...).
 
-```
+```bash
 # General dependencies
 $ yay -S oh-my-posh neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide
 
