@@ -23,7 +23,7 @@ $ omf install https://github.com/decors/fish-colored-man
 $ omf install https://github.com/jorgebucaran/autopair.fish
 $ omf install https://github.com/gazorby/fish-abbreviation-tips
 $ omf install https://github.com/acomagu/fish-async-prompt
-$ omf install done
+$ omf install https://github.com/franciscolourenco/done
 $ omf install sudope
 
 # aichat
