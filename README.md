@@ -21,8 +21,8 @@ $ yay -S oh-my-posh neofetch bat btop fish dunst waybar hyprland-git hyprpaper x
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 $ omf install https://github.com/decors/fish-colored-man
 $ omf install https://github.com/jorgebucaran/autopair.fish
-$ omf install https://github.com/fish-abbreviation-tips
-$ omf install https://github.com/fish-async-prompt
+$ omf install https://github.com/gazorby/fish-abbreviation-tips
+$ omf install https://github.com/acomagu/fish-async-prompt
 $ omf install done
 $ omf install sudope
 
