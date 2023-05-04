@@ -3,11 +3,15 @@
 <p align="center">Disclaimer : this is heavily inspired from excellent flick0's <a href="https://github.com/flick0/dotfiles/tree/aurora">aurora dotfiles</a>.<p>
 <div align="center">
     <img alt="Stars" src="https://img.shields.io/github/stars/cynikkk/dotfiles?style=for-the-badge">
-    <br>
-    <img alt="Open issues"     src="https://img.shields.io/github/issues/cynikkk/dotfiles?style=for-the-badge">
+    <img alt="Open issues" src="https://img.shields.io/github/issues/cynikkk/dotfiles?style=for-the-badge">
 </div>
 
-*todo: insert images here*
+![Image showcase](assets/showcase-1.png)
+![Image showcase](assets/showcase-2.png)
+![Image showcase](assets/showcase-3.png)
+![Image showcase](assets/showcase-4.png)
+![Image showcase](assets/showcase-5.png)
+> Using the excellent `navi`
 
 ## Dependencies
 
