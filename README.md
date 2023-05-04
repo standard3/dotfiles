@@ -17,7 +17,7 @@
 
 As this setup is made for hyprland, a bleeding-edge distribution is recommended (e.g: arch, endeavouros, ...).
 
-```
+```bash
 # General dependencies
 $ yay -S oh-my-posh neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide
 
@@ -25,9 +25,9 @@ $ yay -S oh-my-posh neofetch bat btop fish dunst waybar hyprland-git hyprpaper x
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 $ omf install https://github.com/decors/fish-colored-man
 $ omf install https://github.com/jorgebucaran/autopair.fish
-$ omf install https://github.com/fish-abbreviation-tips
-$ omf install https://github.com/fish-async-prompt
-$ omf install done
+$ omf install https://github.com/gazorby/fish-abbreviation-tips
+$ omf install https://github.com/acomagu/fish-async-prompt
+$ omf install https://github.com/franciscolourenco/done
 $ omf install sudope
 
 # aichat
