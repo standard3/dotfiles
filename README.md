@@ -40,7 +40,6 @@ $ cargo build --release # Build all the packages
 $ cargo install --path anyrun/ # Install the anyrun binary
 $ mkdir -p ~/.config/anyrun/plugins # Create the config directory and the plugins subdirectory
 $ cp target/release/*.so ~/.config/anyrun/plugins # Copy all of the built plugins to the correct directory
-$ cp examples/config.ron ~/.config/anyrun/config.ron # Copy the default config file
 
 # nwg-bar icon
 $ sudo cp <dotfiles>/manual/sleep-light.svg /usr/share/nwg-bar/images/system-sleep.svg
