@@ -19,7 +19,7 @@ As this setup is made for hyprland, a bleeding-edge distribution is recommended 
 
 ```bash
 # General dependencies
-$ yay -S oh-my-posh neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide
+$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git
 
 # Oh-my-fish
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
@@ -32,6 +32,15 @@ $ omf install sudope
 
 # aichat
 $ cargo install --force aichat
+
+# anyrun
+$ git clone https://github.com/Kirottu/anyrun.git # Clone the repository
+$ cd anyrun # Change the active directory to it
+$ cargo build --release # Build all the packages
+$ cargo install --path anyrun/ # Install the anyrun binary
+$ mkdir -p ~/.config/anyrun/plugins # Create the config directory and the plugins subdirectory
+$ cp target/release/*.so ~/.config/anyrun/plugins # Copy all of the built plugins to the correct directory
+$ cp examples/config.ron ~/.config/anyrun/config.ron # Copy the default config file
 ```
 
 # Note
