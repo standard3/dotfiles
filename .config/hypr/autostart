@@ -15,6 +15,19 @@ export MOZ_ENABLE_WAYLAND=1
 # System utilities
 #############################
 
+# Screen sharing
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+
+# Idle timeout
+exec swayidle -w \
+    timeout 900 'swaylock -f -i $HOME/.config/wallpapers/sea.png' \
+    timeout 1500 'systemctl suspend' \
+    before-sleep 'playerctl pause' \
+    before-sleep 'swaylock' &
+
+# Screenshot
+QT_QPA_PLATFORM=xcb flameshot &
+
 # Policy kit (when required elevated privileges)
 /usr/lib/polkit-kde-authentication-agent-1 &
 
