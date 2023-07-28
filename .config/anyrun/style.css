@@ -1,0 +1,93 @@
+/* Colors */
+
+@define-color col_main  #eac509;
+@define-color col_shade #d9db67;
+@define-color col_bg    #1E1E2E;
+@define-color col_bg_gr #343442;
+
+/* Animations */
+@keyframes glissement
+{
+    from
+    {
+        margin-left: 10px;
+    }
+  
+    to
+    {
+        margin-left: 0px;
+    }
+}
+
+/* Properties */
+#window
+{
+    background-color: transparent;
+}
+
+#main
+{
+    background-color: @col_bg;
+    color: @col_main;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+#entry
+{
+    color: @col_main;
+    background-image: -gtk-gradient(
+        radial,
+        center center, 0,
+        center center, 1,
+        from(@col_bg_gr), to(@col_bg)
+    );
+
+    border: 3px solid;
+    border-color: @col_main;
+    border-bottom-width: 3px;
+
+    font-weight: bold;
+}
+
+#plugin
+{
+    color: @col_main;
+    font-weight: bold;
+
+    background-color: @col_bg;
+
+    min-width: 1px;
+}
+
+label#plugin
+{
+    border-bottom: 3px solid;
+
+    padding: 4px;
+    min-width: 2px;
+}
+
+#match
+{
+    color: @col_main;
+    background-color: @col_bg;
+}
+
+#match:selected, #match:hover
+{
+    border: 2px groove @col_main;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 5px;
+
+    animation-duration: 0.1s;
+    animation-name: glissement;
+    animation-iteration-count: 1;
+}
+
+#match-desc
+{
+    color: white;
+    font-weight: normal;
+}
