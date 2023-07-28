@@ -4,7 +4,6 @@ if status is-interactive
    #############################
 
    set fish_greeting ""
-   oh-my-posh init fish --config "~/.poshthemes/yellowish.omp.json" | source
    navi widget fish | source # CTRL+G
    zoxide init fish | source
    #neofetch --size 17% --loop # Probably a better way
@@ -121,11 +120,6 @@ alias hgrep="history | grep $1"
 alias mkdir="mkdir -p $1"
 alias wget="wget -c"
 
-# Confirm commands
-alias cp="cp -i"
-alias mv="mv -i"
-alias rm="rm -i"
-
 # System utilities 
 alias meminfo="free -hlt --mega"
 alias mostu="du -hsx * | sort -rh | head -10"
@@ -144,7 +138,7 @@ alias hypr-config="$editor ~/.config/hypr/hyprland.conf"
 alias hyprpaper-config="$editor ~/.config/hypr/hyprpaper.conf"
 alias hypr-start-config="$editor ~/.config/hypr/autostart"
 alias waybar-config="$editor ~/.config/waybar/"
-alias wofi-config="$editor ~/.config/wofi"
+alias anyrun-config="$editor ~/.config/anyrun"
 alias dunst-config="$editor ~/.config/dunst"
 
 alias sddm-config="sudo $editor /etc/sddm.conf"
@@ -157,6 +151,3 @@ alias icat="kitty +kitten icat"
 
 # Debug
 alias hyprland-debug='watch -n 0.1 "cat /tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/hyprland.log | grep -v \"arranged\" | tail -n 40"'
-
-# Special
-alias reboot-windows='systemctl reboot --boot-loader-entry=auto-windows'
