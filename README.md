@@ -19,7 +19,7 @@ As this setup is made for hyprland, a bleeding-edge distribution is recommended 
 
 ```bash
 # General dependencies
-$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git
+$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git cliphist nwg-bar
 
 # Oh-my-fish
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
@@ -41,6 +41,9 @@ $ cargo install --path anyrun/ # Install the anyrun binary
 $ mkdir -p ~/.config/anyrun/plugins # Create the config directory and the plugins subdirectory
 $ cp target/release/*.so ~/.config/anyrun/plugins # Copy all of the built plugins to the correct directory
 $ cp examples/config.ron ~/.config/anyrun/config.ron # Copy the default config file
+
+# nwg-bar icon
+$ sudo cp <dotfiles>/manual/sleep-light.svg /usr/share/nwg-bar/images/system-sleep.svg
 ```
 
 # Note

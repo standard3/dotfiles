@@ -15,6 +15,9 @@ export MOZ_ENABLE_WAYLAND=1
 # System utilities
 #############################
 
+# Clipboad history
+wl-paste --watch cliphist store &
+
 # Screen sharing
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 

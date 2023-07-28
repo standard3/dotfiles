@@ -1,0 +1,27 @@
+[
+    {
+      "label": "Lock",
+      "exec": "swaylock -f --config /home/abel/.config/swaylock/config",
+      "icon": "/usr/share/nwg-bar/images/system-lock-screen.svg"
+    },
+    {
+       "label": "Sleep",
+       "exec": "swaylock -f --config /home/abel/.config/swaylock/config && systemctl suspend",
+       "icon": "/usr/share/nwg-bar/images/system-sleep.svg"
+    },
+    {
+      "label": "Logout",
+      "exec": "hyprctl dispatch exit",
+      "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
+    },
+    {
+      "label": "Reboot",
+      "exec": "systemctl reboot",
+      "icon": "/usr/share/nwg-bar/images/system-reboot.svg"
+    },
+    {
+      "label": "Shutdown",
+      "exec": "systemctl -i poweroff",
+      "icon": "/usr/share/nwg-bar/images/system-shutdown.svg"
+    }
+   ]
