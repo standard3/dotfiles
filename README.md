@@ -19,7 +19,7 @@ As this setup is made for hyprland, a bleeding-edge distribution is recommended 
 
 ```bash
 # General dependencies
-$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git cliphist nwg-bar
+$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git cliphist nwg-bar avizo pamixer light
 
 # Oh-my-fish
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
