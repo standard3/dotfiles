@@ -6,7 +6,14 @@ if status is-interactive
    set fish_greeting ""
    navi widget fish | source # CTRL+G
    zoxide init fish | source
-   #neofetch --size 17% --loop # Probably a better way
+   
+   # Atuin
+   set -gx ATUIN_NOBIND "true"
+   atuin init fish | source
+
+   # bind to ctrl-r in normal and insert mode, add any other bindings you want here too
+   bind \cr _atuin_search
+   bind -M insert \cr _atuin_search
 
    export EDITOR=/usr/bin/vim
 end
