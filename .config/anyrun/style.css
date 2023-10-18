@@ -1,16 +1,15 @@
 /* Colors */
 
-@define-color col_main  #eac509;
-@define-color col_shade #d9db67;
-@define-color col_bg    #1E1E2E;
-@define-color col_bg_gr #343442;
+@define-color col_main  #9ACAFF;
+@define-color col_bg    #1A1C1E;
+@define-color col_bg_gr #2E3032;
 
 /* Animations */
 @keyframes glissement
 {
     from
     {
-        margin-left: 10px;
+        margin-left: 5px;
     }
   
     to
@@ -23,13 +22,21 @@
 #window
 {
     background-color: transparent;
+    font-family: 'Lexend', 'Bahnschrift', 'Inter';
+}
+
+box#main
+{
+    background-color: @col_bg;
+    color: @col_main;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 0px 0px 8px 1px rgba(30, 30, 30, 0.5);
 }
 
 #main
 {
-    background-color: @col_bg;
-    color: @col_main;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 1em;
 }
 
@@ -46,8 +53,10 @@
     border: 3px solid;
     border-color: @col_main;
     border-bottom-width: 3px;
+    border-radius: 10px;
 
     font-weight: bold;
+    box-shadow: none;
 }
 
 #plugin
@@ -77,9 +86,9 @@ label#plugin
 #match:selected, #match:hover
 {
     border: 2px groove @col_main;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 15px;
-    padding: 5px;
+    padding: 7px;
 
     animation-duration: 0.1s;
     animation-name: glissement;

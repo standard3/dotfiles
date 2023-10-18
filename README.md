@@ -1,6 +1,6 @@
 <h1 align="center">Dotfiles</h1>
 <p align="center">This is the repository for storing and sharing my dotfiles and useful workflow tools.<p>
-<p align="center">Disclaimer : this is heavily inspired from excellent flick0's <a href="https://github.com/flick0/dotfiles/tree/aurora">aurora dotfiles</a>.<p>
+<p align="center">Disclaimer : this is heavily inspired from excellent end4's <a href="https://github.com/end-4/dots-hyprland/tree/m3ww">m3ww dotfiles</a>.<p>
 <div align="center">
     <img alt="Stars" src="https://img.shields.io/github/stars/cynikkk/dotfiles?style=for-the-badge">
     <img alt="Open issues" src="https://img.shields.io/github/issues/cynikkk/dotfiles?style=for-the-badge">
@@ -10,8 +10,6 @@
 ![Image showcase](assets/showcase-2.png)
 ![Image showcase](assets/showcase-3.png)
 ![Image showcase](assets/showcase-4.png)
-![Image showcase](assets/showcase-5.png)
-> Using the excellent `navi`
 
 ## Dependencies
 
@@ -19,7 +17,10 @@ As this setup is made for hyprland, a bleeding-edge distribution is recommended 
 
 ```bash
 # General dependencies
-$ yay -S neofetch bat btop fish dunst waybar hyprland-git hyprpaper xdg-desktop-portal-hyprland-git polkit-kde-agent navi zoxide swaylock thunar flameshot-git cliphist nwg-bar avizo pamixer light
+$ yay -S eww-tray-wayland-git cava hyprland-git xdg-desktop-portal-hyprland-git polkit-kde-agent swayidle fzf gawk thunar gtklock gtklock-playerctl-module gtklock-powerbar-module gtklock-userinfo-module gojq geticons lexend-fonts-git python-pywal python-desktop-entry-lib python-poetry python-build python-pillow swww ttf-material-symbols-git wlogout python-material-color-utilities libqalculate anyrun yad bc blueberry bluez boost boost-libs findutils fuzzel coreutils networkmanager network-manager-applet nlohmann-json gnome-control-center gnome-keyring procps pavucontrol playerctl util-linux
+
+# Utilities
+$ yay -S neofetch bat ripgrep fd btop fish pamixer light navi zoxide cliphist flameshot-git plasma-browser-integration starship upower
 
 # Oh-my-fish
 $ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
@@ -29,20 +30,6 @@ $ omf install https://github.com/gazorby/fish-abbreviation-tips
 $ omf install https://github.com/acomagu/fish-async-prompt
 $ omf install https://github.com/franciscolourenco/done
 $ omf install sudope
-
-# aichat
-$ cargo install --force aichat
-
-# anyrun
-$ git clone https://github.com/Kirottu/anyrun.git # Clone the repository
-$ cd anyrun # Change the active directory to it
-$ cargo build --release # Build all the packages
-$ cargo install --path anyrun/ # Install the anyrun binary
-$ mkdir -p ~/.config/anyrun/plugins # Create the config directory and the plugins subdirectory
-$ cp target/release/*.so ~/.config/anyrun/plugins # Copy all of the built plugins to the correct directory
-
-# nwg-bar icon
-$ sudo cp <dotfiles>/manual/sleep-light.svg /usr/share/nwg-bar/images/system-sleep.svg
 ```
 
 # Note

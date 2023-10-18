@@ -3,10 +3,11 @@ if status is-interactive
    # Shell aesthetic
    #############################
 
-   set fish_greeting ""
+   set fish_greeting
+
    navi widget fish | source # CTRL+G
    zoxide init fish | source
-   
+
    # Atuin
    set -gx ATUIN_NOBIND "true"
    atuin init fish | source
@@ -17,6 +18,8 @@ if status is-interactive
 
    export EDITOR=/usr/bin/vim
 end
+
+starship init fish | source
 
 # Colors
 set -l teal 94e2d5
@@ -47,9 +50,9 @@ end
 
 # Necessary because the way fish works is not POSIX with variables
 # See `functions/fish_ssh_agent.fish`
-function ssh-add --wraps ssh-add --description "Start ssh-agent if not started yet, or uses already started ssh-agent."
+function add-ssh --wraps ssh-add --description "Start ssh-agent if not started yet, or uses already started ssh-agent."
    fish_ssh_agent
-   command ssh-add -q -t 10h
+   ssh-add -q -t 10h
 end
 
 #############################
@@ -72,34 +75,19 @@ abbr -a gpu git push
 # Aliases
 #############################
 
-set release (lsb_release -si) # Get release version
-
 # Set distro-specific variables
-switch $release 
-   case "EndeavourOS" "Arch Linux"
-      set -g pkg_update     "yay -Syu"
-      set -g pkg_install    "yay -S"
-      set -g pkg_clean      "yay -Sc"
-      set -g pkg_autoremove "yay -R (yay -Qdtq)"
-
-      set -g bat "bat"
-      set -g exa "exa"
-
-   case "Ubuntu" "Debian"
-      set -g pkg_update     "apt update"
-      set -g pkg_install    "apt install"
-      set -g pkg_clean      "apt clean"
-      set -g pkg_autoremove "apt autoremove"
-
-      set -g bat "batcat"
-      set -g exa "exa"
-end
+set -g pkg_update     "yay -Syu"
+set -g pkg_install    "yay -S"
+set -g pkg_clean      "yay -Sc"
+set -g pkg_autoremove "yay -R (yay -Qdtq)"
+set -g bat "bat"
+set -g exa "exa"
 
 # Package manager
 alias update=$pkg_update
 alias install=$pkg_install
 alias clean=$pkg_clean
-alias autoremove=$pkg_autoremove # be aware of that
+alias autoremove=$pkg_autoremove
 
 # Navigating files and directories
 alias la="$exa -1 --icons --group-directories-first --grid --long --no-time --group --all"
@@ -116,7 +104,7 @@ alias cd="z"
 alias rfind="find / -name $1 2> /dev/null" # We don't want irrelevant erros
 alias hfind="find ~ -name $1 2> /dev/null"
 
-alias findstr="grep -rli $1"
+alias findstr="grep -rlie $1"
 
 # Utilities
 alias cl="clear"
@@ -126,6 +114,11 @@ alias h="history"
 alias hgrep="history | grep $1"
 alias mkdir="mkdir -p $1"
 alias wget="wget -c"
+
+# Confirm commands
+#alias cp="cp -i"
+#alias mv="mv -i"
+#alias rm="rm -i"
 
 # System utilities 
 alias meminfo="free -hlt --mega"
@@ -158,3 +151,6 @@ alias icat="kitty +kitten icat"
 
 # Debug
 alias hyprland-debug='watch -n 0.1 "cat /tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/hyprland.log | grep -v \"arranged\" | tail -n 40"'
+
+# Special
+alias reboot-windows='systemctl reboot --boot-loader-entry=auto-windows'

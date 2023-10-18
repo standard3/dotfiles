@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/abel/.config/eww/images/wallpaper",
+    "alpha": "100",
+
+    "special": {
+        "background": "#20242d",
+        "foreground": "#c3c9c5",
+        "cursor": "#c3c9c5"
+    },
+    "colors": {
+        "color0": "#20242d",
+        "color1": "#647B8E",
+        "color2": "#5C7CA4",
+        "color3": "#6F8B95",
+        "color4": "#6285AC",
+        "color5": "#6C8FAA",
+        "color6": "#79A9C3",
+        "color7": "#c3c9c5",
+        "color8": "#888c89",
+        "color9": "#647B8E",
+        "color10": "#5C7CA4",
+        "color11": "#6F8B95",
+        "color12": "#6285AC",
+        "color13": "#6C8FAA",
+        "color14": "#79A9C3",
+        "color15": "#c3c9c5"
+    }
+}

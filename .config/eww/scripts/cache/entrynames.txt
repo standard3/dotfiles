@@ -1,0 +1,93 @@
+About Xfce
+Advanced Network Configuration
+Ark
+Avahi SSH Server Browser
+Avahi VNC Server Browser
+Avahi Zeroconf Browser
+Bluetooth
+Bulk Rename
+Burp Suite community edition
+CMake
+Code - OSS
+Configure EOS Update Notifier
+Cutter
+Discord
+Dolphin
+Electron 22
+Electron 25
+Emoji Selector
+EndeavourOS Quickstart Installer
+EndeavourOS apps info
+EndeavourOS log tool
+Ferdium
+File Manager Settings
+Firefox Web Browser
+Flameshot
+Geeqie
+Ghidra
+Google Chrome
+Gwenview
+Hardware Locality lstopo
+Icon Browser
+Info Center
+KCalc
+KDE Connect
+KDE Connect Indicator
+KDE Connect SMS
+KDE Connect Settings
+KDE Partition Manager
+KDE System Settings
+KWrite
+Kate
+Klipper
+Konsole
+LibreOffice
+LibreOffice Base
+LibreOffice Calc
+LibreOffice Draw
+LibreOffice Impress
+LibreOffice Math
+LibreOffice Writer
+Meld
+Menu Editor
+Obsidian
+Okular
+OpenJDK Java 17 Console
+OpenJDK Java 17 Shell
+OpenJDK Java 21 Console
+OpenJDK Java 21 Shell
+Oracle VM VirtualBox
+PulseAudio Volume Control
+Qalculate!
+Qt Assistant
+Qt Designer
+Qt Linguist
+Qt QDBusViewer 
+Qt V4L2 test Utility
+Qt V4L2 video capture utility
+Reboot to Windows
+Reflector Simple
+Signal
+Software Token
+Software Token (small)
+Sublime Text
+System Settings
+Thunar File Manager
+UXTerm
+UserFeedback Console
+VMware Player
+VMware Workstation
+Vim
+Virtual Network Editor
+Welcome
+Wireshark
+XTerm
+YAD settings
+YouTube Music
+btop++
+eos-update
+fish
+gscreenshot
+kitty
+scrcpy
+scrcpy (console)

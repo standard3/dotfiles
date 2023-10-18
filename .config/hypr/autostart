@@ -18,6 +18,10 @@ export MOZ_ENABLE_WAYLAND=1
 # Clipboad history
 wl-paste --watch cliphist store &
 
+# Utility for my mouse
+mouse_color=eac509
+rivalcfg --z1 $mouse_color --z2 $mouse_color --z3 $mouse_color -a white -d reactive &
+
 # Screen sharing
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 
