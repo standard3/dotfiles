@@ -1,3 +1,7 @@
+**Archived** : I went on NixOS, those dotfiles will not be updated anymore. Please see [standard3/nix-config](https://github.com/standard3/nix-config) for new ones.
+
+---
+
 <h1 align="center">Dotfiles</h1>
 <p align="center">This is the repository for storing and sharing my dotfiles and useful workflow tools.<p>
 <p align="center">Disclaimer : this is heavily inspired from excellent end4's <a href="https://github.com/end-4/dots-hyprland/tree/m3ww">m3ww dotfiles</a>.<p>
